@@ -210,3 +210,63 @@ footer { text-align: center; padding: 3rem 1.25rem; color: var(--muted); }
   .entry img, .entry .no-photo { width: 100%; height: 220px; }
   .timeline div { grid-template-columns: 1fr; }
 }
+
+
+/* Mobile-first rescue: turn the dense garden diagram into readable stacked cards */
+@media (max-width: 640px) {
+  body { overflow-x: hidden; }
+  .nav {
+    padding: 1rem;
+    align-items: flex-start;
+  }
+  .brand { max-width: 190px; line-height: 1.1; }
+  .hero-grid { padding: 2rem 1rem 3rem; }
+  h1 { font-size: clamp(2.25rem, 14vw, 3.35rem); letter-spacing: -.06em; }
+  h2 { font-size: clamp(1.9rem, 10vw, 2.65rem); }
+  .hero-copy { font-size: 1rem; line-height: 1.55; }
+  .button { width: 100%; text-align: center; justify-content: center; }
+  .section { padding: 2.6rem 1rem; }
+  .garden-wrap { gap: 1rem; }
+  .garden-map {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    gap: .7rem;
+    padding: .8rem;
+    border-width: 8px;
+    border-radius: 24px;
+  }
+  .garden-map::before,
+  .garden-map::after { display: none; }
+  .plot,
+  .flowers,
+  .beans {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    writing-mode: horizontal-tb !important;
+    min-height: 86px;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 18px;
+  }
+  .path.horizontal {
+    min-height: 52px;
+    order: 6;
+  }
+  .north { order: 1; }
+  .peppers { order: 2; }
+  .eggplant { order: 3; }
+  .spaghetti { order: 4; }
+  .squash.left { order: 5; }
+  .squash.right { order: 7; }
+  .flowers { order: 8; }
+  .herbs { order: 9; }
+  .herb-border { order: 10; }
+  .legend-card { padding: 1.1rem; }
+  .plant-key { padding-left: 1.25rem; }
+  .timeline div { padding: .9rem; }
+  th, td { min-width: 180px; padding: .85rem; }
+  .tracker-form,
+  .tracker-tools { border-radius: 20px; }
+  input, select, textarea { font-size: 16px; }
+}
