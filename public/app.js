@@ -131,3 +131,23 @@ clearBtn.addEventListener('click', () => {
 });
 
 render();
+
+
+// Tabs for condensed mobile-first garden plan
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabPanels = document.querySelectorAll('.tab-panel');
+tabButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const target = button.dataset.tab;
+    tabButtons.forEach((btn) => {
+      const active = btn === button;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-selected', String(active));
+    });
+    tabPanels.forEach((panel) => {
+      const active = panel.id === target;
+      panel.classList.toggle('active', active);
+      panel.hidden = !active;
+    });
+  });
+});
