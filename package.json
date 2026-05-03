@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "serve .",
-    "build": "echo 'Static site: no build required'"
+    "build": "echo 'Static site: public directory ready'"
   }
 }
