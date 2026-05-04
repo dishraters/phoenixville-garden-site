@@ -3,166 +3,159 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Phoenixville Garden Plan</title>
-    <meta name="description" content="Condensed mobile-friendly 18 by 24 Phoenixville garden plan." />
+    <title>Phoenixville Garden Decision Tool</title>
+    <meta name="description" content="Mobile-friendly garden decision tool for an 18 by 24 Phoenixville full-sun garden." />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero compact-hero">
+    <header class="hero">
       <nav class="nav">
         <div class="brand">Phoenixville Garden</div>
-        <a href="#tracker">Weekly Tracker</a>
+        <a href="#tracker">Track growth</a>
       </nav>
-      <section class="hero-grid compact">
+      <section class="hero-grid">
         <div>
-          <p class="eyebrow">18 ft deep × 24 ft wide · Zone 7a · full sun</p>
-          <h1>The best practical garden layout.</h1>
-          <p class="hero-copy">Tall crops in the north, squash contained in the middle/edge, herbs and flowers in the south. Simple enough to follow on a phone while planting.</p>
+          <p class="eyebrow">18 ft deep × 24 ft wide · Zone 7a · full all-day sun</p>
+          <h1>A real planting decision tool.</h1>
+          <p class="hero-copy">Use the first tab while planting. Use the second tab while shopping or explaining why each plant goes where.</p>
         </div>
-        <aside class="stats-card quick-card">
-          <h2>Quick rules</h2>
-          <ul>
-            <li>North/back = tomatoes, peppers, eggplant</li>
-            <li>Middle/edge = zucchini + spaghetti squash</li>
-            <li>South/front = herbs + pollinator flowers</li>
-            <li>Mint stays in a pot only</li>
-          </ul>
+        <aside class="hero-card">
+          <h2>5-second plan</h2>
+          <p><strong>Back:</strong> tall sun crops. <strong>Middle:</strong> controlled squash. <strong>Front:</strong> herbs + flowers. <strong>Outside:</strong> mint + optional containers.</p>
         </aside>
       </section>
     </header>
 
     <main>
-      <section class="section tabs-section">
+      <section class="section planner">
         <div class="tab-buttons" role="tablist" aria-label="Garden plan tabs">
-          <button class="tab-button active" type="button" role="tab" aria-selected="true" aria-controls="placement" data-tab="placement">Plant chart</button>
-          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="why" data-tab="why">Why it goes there</button>
+          <button class="tab-button active" type="button" role="tab" aria-selected="true" aria-controls="visual" data-tab="visual">A. Visual layout</button>
+          <button class="tab-button" type="button" role="tab" aria-selected="false" aria-controls="guide" data-tab="guide">B. Planting guide</button>
         </div>
 
-        <section id="placement" class="tab-panel active" role="tabpanel">
-          <div class="section-heading tight">
-            <p class="eyebrow">Tab 1</p>
-            <h2>Where each plant goes</h2>
-            <p>Use this as the planting chart. North is the back of the garden. South is the front.</p>
+        <section id="visual" class="tab-panel active" role="tabpanel">
+          <div class="section-heading compact">
+            <p class="eyebrow">Version A — simple top-down map</p>
+            <h2>Exactly where each plant goes</h2>
+            <p>North/back is the top. The footprints show the approximate space each plant needs.</p>
           </div>
 
-          <div class="floor-plan-card">
-            <div class="dimension top">24 ft wide</div>
-            <div class="dimension side">18 ft deep</div>
-            <div class="garden-floor-plan exact-plan" aria-label="Exact top-down garden floor plan with individual plant locations">
-              <div class="floor-label north-label">NORTH / BACK</div>
-              <div class="floor-label south-label">SOUTH / FRONT</div>
-
-              <div class="grid-line v v1"></div><div class="grid-line v v2"></div><div class="grid-line v v3"></div><div class="grid-line v v4"></div><div class="grid-line v v5"></div>
-              <div class="grid-line h h1"></div><div class="grid-line h h2"></div><div class="grid-line h h3"></div><div class="grid-line h h4"></div><div class="grid-line h h5"></div>
-
-              <div class="floor-path exact-main-path">3 ft harvest path</div>
-              <div class="floor-path exact-front-path">2 ft front path</div>
-              <div class="vine-arrow">vines trail outward ←</div>
-
-              <div class="plant-dot tomato p1"><strong>1</strong><span>San Marzano</span></div>
-              <div class="plant-dot tomato p2"><strong>2</strong><span>Cherry / grape</span></div>
-              <div class="plant-dot tomato p3"><strong>3</strong><span>Slicer</span></div>
-              <div class="plant-dot basil b1"><strong>B</strong><span>Basil</span></div>
-              <div class="plant-dot basil b2"><strong>B</strong><span>Basil</span></div>
-              <div class="plant-dot basil b3"><strong>B</strong><span>Basil</span></div>
-              <div class="plant-dot pepper p4"><strong>4</strong><span>Poblano</span></div>
-              <div class="plant-dot pepper p5"><strong>5</strong><span>Jalapeño</span></div>
-              <div class="plant-dot eggplant p6"><strong>6</strong><span>Eggplant</span></div>
-              <div class="plant-dot eggplant p7"><strong>7</strong><span>Eggplant</span></div>
-              <div class="plant-dot squash p8"><strong>8</strong><span>Spaghetti squash</span></div>
-              <div class="plant-dot zucchini p9"><strong>9</strong><span>Zucchini</span></div>
-              <div class="plant-dot zucchini p10"><strong>10</strong><span>Zucchini</span></div>
-              <div class="plant-dot flower p11"><strong>11</strong><span>Marigolds / zinnias</span></div>
-              <div class="plant-dot herb p12"><strong>12</strong><span>Parsley</span></div>
-              <div class="plant-dot herb p13"><strong>13</strong><span>Oregano / thyme</span></div>
+          <div class="print-card">
+            <div class="map-title-row">
+              <div><strong>18 ft × 24 ft Garden Floor Plan</strong><span>Phoenixville, PA · full sun</span></div>
+              <div class="orientation"><span>↑ NORTH / BACK</span><span>↓ SOUTH / FRONT</span></div>
             </div>
-          </div>
 
-          <div class="outside-row" aria-label="Outside container plants">
-            <div class="plant-chip container"><strong>14</strong><span>Mint pot only</span></div>
-            <div class="plant-chip container"><strong>15</strong><span>Optional bay tree planter</span></div>
-            <div class="plant-chip container"><strong>16</strong><span>Optional hanging baskets</span></div>
-          </div>
+            <div class="garden-map" aria-label="Exact garden floor layout">
+              <div class="dimension-top">24 ft wide</div>
+              <div class="dimension-side">18 ft deep</div>
+              <div class="north-banner">NORTH / BACK — tallest plants here</div>
+              <div class="south-banner">SOUTH / FRONT — low herbs + flowers</div>
+              <div class="path path-main">Walk / harvest path<br><small>keeps tomatoes + squash reachable</small></div>
+              <div class="path path-front">Front access path<br><small>easy herb + flower care</small></div>
+              <div class="vine-note">← spaghetti squash vines trail outward</div>
 
-          <div class="condensed-list">
-            <h3>Shopping list</h3>
-            <p><strong>Vegetables:</strong> 3 tomatoes, poblano, jalapeño, 2 eggplants, 2 zucchini, 1 spaghetti squash.</p>
-            <p><strong>Herbs/flowers:</strong> basil, parsley, oregano, thyme, mint pot, marigolds/zinnias.</p>
-            <p><strong>Supplies:</strong> 3 tomato cages, compost, mulch, soaker hose/drip line, labels, twine.</p>
+              <div class="plant tomato t1" style="--x:15%;--y:18%;--s:86px"><b>1</b><i>🍅</i><span>San Marzano<br><small>cage</small></span></div>
+              <div class="plant tomato t2" style="--x:32%;--y:18%;--s:86px"><b>2</b><i>🍅</i><span>Cherry/Grape<br><small>cage</small></span></div>
+              <div class="plant tomato t3" style="--x:49%;--y:18%;--s:86px"><b>3</b><i>🍅</i><span>Slicer<br><small>cage</small></span></div>
+
+              <div class="plant basil" style="--x:15%;--y:29%;--s:48px"><b>B</b><i>🌿</i></div>
+              <div class="plant basil" style="--x:32%;--y:29%;--s:48px"><b>B</b><i>🌿</i></div>
+              <div class="plant basil" style="--x:49%;--y:29%;--s:48px"><b>B</b><i>🌿</i></div>
+
+              <div class="plant pepper" style="--x:67%;--y:17%;--s:72px"><b>4</b><i>🫑</i><span>Poblano</span></div>
+              <div class="plant pepper" style="--x:67%;--y:29%;--s:72px"><b>5</b><i>🌶️</i><span>Jalapeño</span></div>
+
+              <div class="plant eggplant" style="--x:85%;--y:17%;--s:78px"><b>6</b><i>🍆</i><span>Eggplant</span></div>
+              <div class="plant eggplant" style="--x:85%;--y:30%;--s:78px"><b>7</b><i>🍆</i><span>Eggplant</span></div>
+
+              <div class="plant squash vine" style="--x:17%;--y:60%;--s:132px"><b>8</b><i>🌱</i><span>Spaghetti squash<br><small>4–5 ft vine zone</small></span></div>
+              <div class="plant zucchini" style="--x:50%;--y:61%;--s:124px"><b>9</b><i>🥒</i><span>Zucchini<br><small>3–4 ft</small></span></div>
+              <div class="plant zucchini" style="--x:79%;--y:61%;--s:124px"><b>10</b><i>🥒</i><span>Zucchini<br><small>3–4 ft</small></span></div>
+
+              <div class="plant flowers" style="--x:24%;--y:88%;--s:152px"><b>11</b><i>🌼</i><span>Marigolds / zinnias<br><small>pollinator border</small></span></div>
+              <div class="plant parsley" style="--x:55%;--y:88%;--s:88px"><b>12</b><i>🌿</i><span>Parsley</span></div>
+              <div class="plant herb" style="--x:79%;--y:88%;--s:128px"><b>13</b><i>🌱</i><span>Oregano / thyme<br><small>low edge</small></span></div>
+            </div>
+
+            <div class="outside-callout">
+              <strong>Outside / containers:</strong>
+              <span>14 🪴 Mint pot only</span>
+              <span>15 🌳 Optional bay tree planter</span>
+              <span>16 🌸 Optional hanging baskets</span>
+            </div>
           </div>
         </section>
 
-        <section id="why" class="tab-panel" role="tabpanel" hidden>
-          <div class="section-heading tight">
-            <p class="eyebrow">Tab 2</p>
-            <h2>Why each plant goes there</h2>
-            <p>Short version: keep tall plants north, aggressive plants contained, and frequent-pick plants easy to reach.</p>
+        <section id="guide" class="tab-panel" role="tabpanel" hidden>
+          <div class="section-heading compact">
+            <p class="eyebrow">Version B — detailed planting guide</p>
+            <h2>Key, spacing, notes, and shopping list</h2>
+            <p>Use this tab at the garden center or while explaining the plan.</p>
           </div>
 
-          <div class="why-list">
-            <article><h3>Tomatoes + basil → north/back</h3><p>Tomatoes are tall and need cages. North placement prevents shade over the rest of the garden. Basil likes similar warmth and is easy to tuck nearby.</p></article>
-            <article><h3>Peppers → back row beside tomatoes</h3><p>Poblano and jalapeño want full sun and stay upright. They fit neatly beside tomatoes without spreading.</p></article>
-            <article><h3>Eggplant → back/right</h3><p>Eggplant wants heat, sun, and airflow. Two plants are ideal; three only if spacing still feels open.</p></article>
-            <article><h3>Spaghetti squash → far left edge</h3><p>It vines aggressively. Edge placement lets vines trail outward instead of running through tomatoes and herbs.</p></article>
-            <article><h3>Zucchini → middle with room</h3><p>Zucchini gets big fast. Two plants are plenty. Give each a 3–4 ft zone and keep the path clear.</p></article>
-            <article><h3>Parsley, oregano, thyme → front</h3><p>Low herbs should be reachable from the front and should not shade vegetables.</p></article>
-            <article><h3>Marigolds/zinnias → front border</h3><p>They make the garden look finished and bring pollinators toward the vegetable flowers.</p></article>
-            <article><h3>Mint → container only</h3><p>Mint spreads aggressively. A pot gives the benefit without letting it take over the bed.</p></article>
+          <div class="guide-grid">
+            <article class="guide-card span-2">
+              <h3>Plant key</h3>
+              <div class="table-wrap">
+                <table>
+                  <thead><tr><th>#</th><th>Plant</th><th>Qty</th><th>Spacing</th><th>Note</th></tr></thead>
+                  <tbody>
+                    <tr><td>1</td><td>San Marzano tomato</td><td>1</td><td>24–30 in</td><td>Cage/stake in back row</td></tr>
+                    <tr><td>2</td><td>Cherry/Grape tomato</td><td>1</td><td>24–30 in</td><td>Cage/stake in back row</td></tr>
+                    <tr><td>3</td><td>Slicer tomato</td><td>1</td><td>24–30 in</td><td>Cage/stake in back row</td></tr>
+                    <tr><td>4</td><td>Poblano</td><td>1</td><td>18–24 in</td><td>Full sun, upright</td></tr>
+                    <tr><td>5</td><td>Jalapeño</td><td>1</td><td>18–24 in</td><td>Full sun, upright</td></tr>
+                    <tr><td>6–7</td><td>Eggplant</td><td>2</td><td>18–24 in</td><td>Warm sunny back/right</td></tr>
+                    <tr><td>8</td><td>Spaghetti squash</td><td>1</td><td>4–5 ft</td><td>Left edge; trail vines outward</td></tr>
+                    <tr><td>9–10</td><td>Zucchini</td><td>2</td><td>3–4 ft</td><td>Large plants; middle only</td></tr>
+                    <tr><td>11</td><td>Marigolds/Zinnias</td><td>Border</td><td>8–12 in</td><td>Pollinator front border</td></tr>
+                    <tr><td>12</td><td>Parsley</td><td>Cluster</td><td>8–12 in</td><td>Front/middle access</td></tr>
+                    <tr><td>13</td><td>Oregano/Thyme</td><td>Border</td><td>12–18 in</td><td>Low herb edge</td></tr>
+                    <tr><td>B</td><td>Basil</td><td>3</td><td>10–12 in</td><td>Tuck near tomatoes</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </article>
+
+            <article class="guide-card"><h3>Why back row?</h3><p>Tomatoes, peppers, and eggplant want full sun and stay upright. Keeping them north/back prevents shade over herbs and flowers.</p></article>
+            <article class="guide-card"><h3>Why squash middle/edge?</h3><p>Zucchini is wide and spaghetti squash vines. Give them visible footprints so they do not silently take over.</p></article>
+            <article class="guide-card"><h3>Why flowers front?</h3><p>Marigolds and zinnias create a pollinator border, improve the look, and stay low enough for the front.</p></article>
+            <article class="guide-card"><h3>Why paths?</h3><p>The paths are for watering, pruning, tying tomatoes, redirecting vines, and harvesting without stepping on soil.</p></article>
+
+            <article class="guide-card span-2 shopping">
+              <h3>Shopping checklist</h3>
+              <div class="shopping-grid">
+                <div><h4>Vegetables</h4><label><input type="checkbox"> 1 San Marzano tomato</label><label><input type="checkbox"> 1 cherry/grape tomato</label><label><input type="checkbox"> 1 slicer tomato</label><label><input type="checkbox"> 1 poblano</label><label><input type="checkbox"> 1 jalapeño</label><label><input type="checkbox"> 2 eggplants</label><label><input type="checkbox"> 2 zucchini</label><label><input type="checkbox"> 1 spaghetti squash</label></div>
+                <div><h4>Herbs</h4><label><input type="checkbox"> 3 basil</label><label><input type="checkbox"> parsley cluster</label><label><input type="checkbox"> oregano and/or thyme</label><label><input type="checkbox"> mint for container only</label></div>
+                <div><h4>Flowers</h4><label><input type="checkbox"> marigolds and/or zinnias</label><label><input type="checkbox"> optional hanging baskets</label></div>
+                <div><h4>Supplies</h4><label><input type="checkbox"> tomato cages</label><label><input type="checkbox"> mulch</label><label><input type="checkbox"> plant labels</label><label><input type="checkbox"> large mint pot</label><label><input type="checkbox"> potting mix</label><label><input type="checkbox"> drip/soaker hose</label></div>
+              </div>
+            </article>
           </div>
         </section>
       </section>
 
-      <section id="tracker" class="section tracker-section condensed-tracker">
-        <div class="section-heading tight">
+      <section id="tracker" class="section tracker-section">
+        <div class="section-heading compact">
           <p class="eyebrow">Weekly growth log</p>
           <h2>Track the garden</h2>
           <p>Save weekly notes and photos in this browser.</p>
         </div>
-
         <form id="logForm" class="tracker-form">
-          <label>Week of
-            <input type="date" id="weekOf" required />
-          </label>
-          <label>Stage
-            <select id="stage">
-              <option>Soil prep</option>
-              <option>Planted</option>
-              <option>Growing</option>
-              <option>Flowering</option>
-              <option>First harvest</option>
-              <option>Peak harvest</option>
-              <option>Cleanup</option>
-            </select>
-          </label>
-          <label>Photo
-            <input type="file" id="photo" accept="image/*" />
-          </label>
-          <label class="full">Weekly note
-            <textarea id="notes" placeholder="What changed this week?" required></textarea>
-          </label>
-          <label>Harvest
-            <input type="text" id="harvest" placeholder="e.g. 3 zucchini, basil" />
-          </label>
-          <label>Next task
-            <input type="text" id="tasks" placeholder="e.g. tie tomatoes, redirect squash" />
-          </label>
-          <button class="button primary" type="submit">Save update</button>
-          <button class="button" type="button" id="exportBtn">Export</button>
+          <label>Week of<input type="date" id="weekOf" required /></label>
+          <label>Stage<select id="stage"><option>Soil prep</option><option>Planted</option><option>Growing</option><option>Flowering</option><option>First harvest</option><option>Peak harvest</option><option>Cleanup</option></select></label>
+          <label>Photo<input type="file" id="photo" accept="image/*" /></label>
+          <label class="full">Weekly note<textarea id="notes" placeholder="What changed this week?" required></textarea></label>
+          <label>Harvest<input type="text" id="harvest" placeholder="e.g. 3 zucchini, basil" /></label>
+          <label>Next task<input type="text" id="tasks" placeholder="e.g. tie tomatoes, redirect squash" /></label>
+          <button class="button primary" type="submit">Save update</button><button class="button" type="button" id="exportBtn">Export</button>
         </form>
-
-        <div class="tracker-tools">
-          <input id="search" type="search" placeholder="Search updates…" />
-          <button class="button danger" id="clearBtn" type="button">Clear</button>
-        </div>
-
+        <div class="tracker-tools"><input id="search" type="search" placeholder="Search updates…" /><button class="button danger" id="clearBtn" type="button">Clear</button></div>
         <div id="entries" class="entries" aria-live="polite"></div>
       </section>
     </main>
-
-    <footer>
-      <p>Best layout: tall north, squash controlled, herbs and flowers south.</p>
-    </footer>
-
+    <footer><p>Print it, shop from it, plant from it.</p></footer>
     <script src="app.js"></script>
   </body>
 </html>
